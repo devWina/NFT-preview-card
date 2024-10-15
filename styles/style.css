@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --font-outfit: "Outfit", sans-sarif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Very-dark-blue-mainBG);
+  font-family: var(--font-outfit);
+}
+
+.container {
+  width: 15%;
+  background-color: var(--Very-dark-blue-cardBG);
+  padding: 20px;
+  border-radius: 15px;
+}
+.container .sub {
+  width: 100%;
+}
+.container .sub img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container .sub .card-content .heading {
+  color: var(--White);
+  font-size: 15px;
+}
+.container .sub .card-content .paragraph {
+  color: var(--Soft-blue);
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.container .sub .card-content .stats {
+  display: flex;
+  color: var(--White);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+.container .sub .card-content .stats .coin {
+  margin: 0;
+  display: flex;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: var(--Cyan);
+  align-items: center;
+  gap: 3px;
+}
+.container .sub .card-content .stats .coin img {
+  width: 8px;
+  height: 15px;
+}
+.container .sub .card-content .stats .days {
+  margin: 0;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--Soft-blue);
+  align-items: center;
+  gap: 3px;
+  align-items: center;
+}
+.container .sub .card-content .stats .days img {
+  width: 15px;
+  height: 15px;
+}
+.container .sub .card-content .profile-info {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+.container .sub .card-content .profile-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+  margin-right: 8px;
+}
+.container .sub .card-content .profile-info span {
+  color: var(--Soft-blue);
+}
+.container .sub .card-content .profile-info .name {
+  margin: 0;
+  color: var(--White);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.attribution {
+  color: var(--Soft-blue);
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Cyan);
+  font-weight: 800;
+}
+@media screen and (max-width: 768px) {
+  .attribution {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
